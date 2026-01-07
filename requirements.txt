@@ -1,0 +1,70 @@
+# Python package requirements for Eternal_PS_InterIIT project
+# Platform: ARM64 (aarch64) - Raspberry Pi 4
+# Python: 3.10.19
+# Install with: pip install -r requirements.txt
+
+# Core scientific computing
+numpy==2.2.5
+scipy==1.15.2
+matplotlib==3.10.1
+
+# Computer vision and QR code processing
+opencv-python==4.12.0.88
+pyzbar==0.1.9
+
+# Jupyter and IPython
+ipykernel==6.29.5
+ipython==8.35.0
+jupyter-client==8.6.3
+jupyter-core==5.7.2
+
+# Plotting and visualization
+contourpy==1.3.2
+cycler==0.12.1
+fonttools==4.57.0
+kiwisolver==1.4.8
+matplotlib-inline==0.1.7
+
+# Development and debugging
+debugpy==1.8.14
+jedi==0.19.2
+parso==0.8.4
+prompt-toolkit==3.0.51
+
+# Async and communication
+comm==0.2.2
+nest-asyncio==1.6.0
+pyzmq==26.4.0
+tornado==6.4.2
+
+# Utilities
+asttokens==3.0.0
+decorator==5.2.1
+exceptiongroup==1.2.2
+executing==2.2.0
+packaging==25.0
+platformdirs==4.3.7
+pure-eval==0.2.3
+pygments==2.19.1
+python-dateutil==2.9.0.post0
+stack-data==0.6.3
+traitlets==5.14.3
+typing-extensions==4.13.2
+wcwidth==0.2.13
+
+# Raspberry Pi 4 Specific Packages (ARM64):
+# These packages are required for hardware interfacing on Raspberry Pi 4
+# and should be installed after the base requirements:
+# 
+# GPIO Control:
+#   pip install RPi.GPIO      # Primary GPIO library for Raspberry Pi
+#   pip install pigpio        # Alternative GPIO library with PWM support
+# 
+# Serial Communication:
+#   pip install pyserial      # For Arduino/serial device communication
+# 
+# Input Control:
+#   pip install pynput        # For keyboard input handling
+#
+# Installation command for all RPi-specific packages:
+# pip install RPi.GPIO pigpio pyserial pynput

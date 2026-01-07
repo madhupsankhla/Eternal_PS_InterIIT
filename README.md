@@ -1,2 +1,1 @@
 # Eternal_PS_InterIIT
-Eternal_PS_InterIIT

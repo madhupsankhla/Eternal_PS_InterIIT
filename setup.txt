@@ -1,0 +1,24 @@
+ls -la /dev | grep ttyACM*
+sudo usermod -a -G dialout tamizhanbanag
+sudo chmod a+rw /dev/ttyACM*
+sudo systemctl enable --now pigpiod
+
+
+# List available networks
+sudo nmcli device wifi list
+
+# Connect to new network
+sudo nmcli device wifi connect "NEW_SSID" password "NEW_PASSWORD"
+
+
+ip -4 addr show wlan0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
+
+ssh -X aarav-pi@10.81.86.18
+
+
+# if using miniconda
+source ~/miniconda3/bin/activate
+
+# Then initialize
+conda init bash
+source ~/.bashrc
